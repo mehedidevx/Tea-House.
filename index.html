@@ -55,6 +55,71 @@
   <body class="font-customFont">
     <main class="max-w-7xl mx-auto">
       <!-- header section -->
+       <div class="sticky top-0 z-50">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h7" />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li><a>Homepage</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>About</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-center">
+            <a class="btn btn-ghost text-xl">TEA HOUSE</a>
+          </div>
+          <div class="navbar-end">
+            <button class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+            <button class="btn btn-ghost btn-circle">
+              <div class="indicator">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                </svg>
+                <span class="badge badge-xs badge-primary indicator-item"></span>
+              </div>
+            </button>
+          </div>
+        </div>
+       </div>
       <div class="md:flex justify-between items-center p-5">
         <!-- header info -->
         <div class="space-y-8">
@@ -74,7 +139,7 @@
         <!-- header image -->
         <div class="relative">
           <!-- image section -->
-          <div class="z-0">
+          <div >
             <img src="https://i.ibb.co.com/zh22XKs/banner.png" alt="" />
           </div>
           <!-- icon section -->
@@ -143,10 +208,10 @@
       <!-- feature section end -->
       <!-- Great Tea Section Start -->
       <section
-        class="p-5 items-center md:flex md:flex-row gap-10 md:items-stretch mb-32"
+        class="p-5 items-center flex-col md:flex md:flex-row gap-10 md:items-stretch mb-32"
       >
         <!-- image section -->
-        <div class="grid w-1/2 grid-cols-2 grid-rows-3 gap-5">
+        <div class="grid md:w-1/2 grid-cols-2 grid-rows-3 gap-5">
           <div class="bg-Gbg1 opacity-10 rounded-xl"></div>
           <div class="bg-Gbg2 row-span-2 flex justify-center py-10 rounded-xl">
             <img src="./images/fresh-1.png" alt="" />
@@ -157,7 +222,7 @@
           <div class="bg-Gbg4 rounded-xl"></div>
         </div>
         <!-- Description Section -->
-        <div class="w-1/2 flex justify-between flex-col items-left text-left">
+        <div class="md:w-1/2 mt-5 flex justify-between flex-col items-left text-left">
           <div>
             <h2 class="text-4xl font-extrabold mb-5">
               Great Tea, Freshly <br />
@@ -194,9 +259,9 @@
         </div>
       </section>
       <section
-        class="bg-bg5 rounded-xl flex justify-between items-center py-20 p-5 gap-4"
+        class="bg-bg5 rounded-xl md:flex justify-between items-center py-20 p-5 gap-4"
       >
-        <div class="w-1/2   p-7">
+        <div class="md:w-1/2   p-7">
           <h3 class="text-4xl font-extrabold mb-5 text-white">
             Meet Our Super <br />
             Clients
@@ -214,7 +279,7 @@
             Show All
           </button>
         </div>
-        <div class="w-1/2 flex flex-col gap-8 relative  ">
+        <div class="md:w-1/2 flex flex-col gap-8 relative  ">
           <div class="bg-white p-10 rounded-xl relative  opacity-20">
             <div
               class="absolute -top-5 -left-5 rounded-full border-[5px] border-white"
@@ -243,7 +308,7 @@
             <h3 class="font-bold mb-4">Ilham Yuda</h3>
             <p class="text-description font-medium">Businessman</p>
           </div>
-          <div class="absolute top-36 -left-20 w-full">
+          <div class="md:absolute top-36 -left-20 w-full">
             <div class="bg-white p-10 rounded-xl relative ">
               <div
                 class="absolute -top-5 -left-5 rounded-full border-[5px] border-white"
@@ -261,18 +326,63 @@
           </div>
         </div>
       </section>
-      <section class="mt-12">
+      <section class="mt-12 mb-32">
         <div class="text-center mb-12">
           <h2 class="text-4xl font-extrabold mb-5">News & Events</h2>
           <p class="font-medium leading-7">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, <br> by injected humour, or randomised words which don't look even slightly believable. </p>
         </div>
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="md:grid grid-cols-3 gap-4">
+          <div class="border rounded-xl flex flex-col p-5">
+            <img src="./images/news-1.png" alt="">
+            <p class="my-5 font-medium text-description">Feb 05, 2027</p>
+            <h3 class="text-xl font-extrabold mb-3">Collecting 8 points for <br>discount</h3>
+            <p class="font-medium mb-3 text-description">There are many variations of passages of <br> Lorem Ipsum available.</p>
+            <h3 class="font-bold text-[#1C1C1C]">Learn More</h3>
+          </div>
+          <div class="border rounded-xl flex flex-col p-5">
+            <img src="./images/news-2.png" alt="">
+            <p class="my-5 font-medium text-description">Feb 05, 2027</p>
+            <h3 class="text-xl font-extrabold mb-3">Collecting 8 points for discount</h3>
+            <p class="font-medium mb-3 text-description">There are many variations of passages of Lorem Ipsum available.</p>
+            <h3 class="font-bold text-[#1C1C1C]">Learn More</h3>
+          </div>
+          <div class="border rounded-xl flex flex-col p-5">
+            <img src="./images/news-3.png" alt="">
+            <p class="my-5 font-medium text-description">Feb 05, 2027</p>
+            <h3 class="text-xl font-extrabold mb-3">Collecting 8 points for discount</h3>
+            <p  class="font-medium mb-3 text-description">There are many variations of passages of Lorem Ipsum available.</p>
+            <h3 class="font-bold text-[#1C1C1C]">Learn More</h3>
+          </div>
+        
         </div>
       </section>
       <!-- Great Tea Section End -->
+       <!-- Footer Section Start -->
+        <section class="max-w-screen-2xl bg-red-700">
+          <footer class="footer bg-neutral text-neutral-content p-10">
+            <nav>
+              <h6 class="footer-title">Services</h6>
+              <a class="link link-hover">Branding</a>
+              <a class="link link-hover">Design</a>
+              <a class="link link-hover">Marketing</a>
+              <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Company</h6>
+              <a class="link link-hover">About us</a>
+              <a class="link link-hover">Contact</a>
+              <a class="link link-hover">Jobs</a>
+              <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Legal</h6>
+              <a class="link link-hover">Terms of use</a>
+              <a class="link link-hover">Privacy policy</a>
+              <a class="link link-hover">Cookie policy</a>
+            </nav>
+          </footer>
+        </section>
+        <!-- Footer section End -->
     </main>
     <!-- <img src="https://i.ibb.co.com/zh22XKs/banner.png" alt=""> -->
   </body>
